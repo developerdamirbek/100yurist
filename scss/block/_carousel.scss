@@ -1,0 +1,226 @@
+.portal_lawyers_section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.portal_lawyers {
+    margin-top: 80px;
+}
+
+.lawyer_card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 27px;
+    border-radius: 20px;
+    border: 1px solid #2F2B4326;
+    margin-bottom: 15px;
+}
+
+.lawyers_title {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 44px;
+    letter-spacing: -0.03em;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+
+.lawyer_name {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.lawyer_address {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.lawyer_text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #2F2B4380;
+}
+
+.all_lawyers {
+    color: #33836E;
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 10px;
+    background-color: #E0ECE9;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    padding-left: 36px;
+    padding-right: 36px;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+.question_form {
+    padding: 40px;
+    border-radius: 20px;
+    background: #33836E;
+}
+
+.question {
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.question_title {
+    color: #FFF;
+    font-family: "Open Sans";
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: -0.96px;
+    margin-bottom: 10px;
+
+}
+
+.online {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #FFF;
+    display: flex;
+    padding: 5px 16px 6px 16px;
+    position: absolute;
+    right: 30px;
+    top: 50px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.question_text {
+    color: #FFF;
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.input_form {
+    max-width: 577px;
+    width: 100%;
+}
+
+.describe_problem_input {
+    max-width: 577px;
+    width: 100%;
+    height: 213px;
+    padding: 12px 16px 8px 16px;
+    border-radius: 10px;
+    background-color: #FFF;
+    outline: none;
+    border: none;
+    margin-bottom: 20px;
+}
+
+.question_inputs {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.input1 {
+    max-width: 205px;
+    height: 56px;
+    padding: 7px, 16px, 8px, 16px;
+    border-radius: 10px;
+    gap: 3px;
+    outline: none;
+    // border: none;
+    border: 1px solid #2F2B4326
+}
+
+.input2 {
+    max-width: 205px;
+    height: 56px;
+    padding: 7px, 16px, 8px, 16px;
+    border-radius: 10px;
+    gap: 3px;
+    outline: none;
+    // border: none;
+    border: 1px solid #2F2B4326
+}
+
+.inputs_send_btn {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0px;
+    border-radius: 10px;
+    background: #140A32;
+    color: #FFF;
+    padding-top: 16px;
+    padding-bottom: 18px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.send_info {
+    color: rgba(255, 255, 255, 0.50);
+    font-family: "Open Sans";
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.lawyers_info {
+    display: flex;
+    gap: 40px;
+}
+
+.law_info_title {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: -0.6px;
+    margin-bottom: 10px;
+}
+
+.law_info_text {
+    color: #FFF;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+@media screen and (max-width:1040px) {
+    .portal_lawyers_section {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width:620px) {
+    .question_inputs{
+        flex-direction: column;
+    }
+    .input1{
+        max-width: 500px;
+    }
+    .input2{
+        max-width: 500px;
+    }
+}

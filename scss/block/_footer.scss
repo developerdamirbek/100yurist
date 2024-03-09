@@ -1,0 +1,93 @@
+.footer_section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 20px;
+    column-gap: 20px;
+}
+
+.card_name {
+    color: #140A32;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.card_text {
+    color: #140A32;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.footer_title {
+    color: #140A32;
+    font-family: "Open Sans";
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: -0.96px;
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+
+/* Dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown butonu */
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Dropdown içeriği (görünmeyen) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Dropdown içeriği linkleri */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Hover efekti */
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Dropdown içeriği görünür yapma */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Dropdown butonuna hover efekti */
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+
+@media screen and (max-width:620px) {
+    .footer_section{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width:450px) {
+    .footer_section{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

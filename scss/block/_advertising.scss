@@ -1,0 +1,69 @@
+.advertising {
+    margin-top: 360px;
+}
+
+.ads_title {
+    color: #140A32;
+    font-family: "Open Sans";
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: -0.96px;
+    margin-bottom: 30px;
+}
+
+.ads_cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 20px;
+    column-gap: 20px;
+}
+
+.ads_card {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid rgba(47, 43, 67, 0.15);
+}
+
+.ads_text {
+    color: #140A32;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    span {
+        font-family: Open Sans;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+}
+
+.ads_icon {
+    padding: 35px;
+    border-radius: 9999px;
+    background-color: #EBF2F0;
+}
+
+@media screen and (max-width:860px) {
+    .ads_cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width:600px) {
+    .ads_img {
+        max-width: 24px;
+    }
+
+    .ads_icon {
+        padding: 15px;
+        border-radius: 9999px;
+    }
+}

@@ -1,0 +1,136 @@
+.specialities {
+    margin-top: 80px;
+}
+
+.spec_title {
+    margin-bottom: 18px;
+}
+
+.spec_card {
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid rgba(47, 43, 67, 0.15);
+}
+
+.spec_subtitle {
+    color: #140A32;
+    font-family: "Open Sans";
+    font-size: 16px;
+    padding-left: 39px;
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #33836E;
+}
+
+.spec_subtitle::before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    top: -2px;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    background-image: url(/images/stroller.svg);
+}
+
+.spec_cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 20px;
+    column-gap: 20px;
+}
+
+.lawer_text {
+    color: #FFF;
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-weight: 600;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.lawers {
+    display: flex;
+    align-items: center;
+    background-color: #33836E;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.lawer {
+    margin-left: 116px;
+}
+
+.lawer_img {
+    padding-left: 40px;
+}
+
+.block_for_ceo {
+    margin-top: 80px;
+}
+
+.ceo_title {
+    color: #140A32;
+    font-family: "Open Sans";
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: -0.96px;
+    margin-bottom: 20px;
+}
+
+.ceo_text {
+    color: #140A32;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 160%;
+    margin-bottom: 15px;
+}
+
+.ceo_btn {
+    margin-top: 30px;
+    color: #33836E;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    padding: 16px 36px 18px 36px;
+    border-radius: 10px;
+    background-color: #E0ECE9;
+}
+
+@media screen and (max-width:1050px) {
+    .lawer {
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .lawer_img {
+        margin-top: 20px;
+    }
+
+    .lawers {
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .cards_2 {
+        display: none;
+    }
+
+    .spec_cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .speciality {
+        margin-bottom: 15px;
+    }
+}

@@ -1,0 +1,220 @@
+.header {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.header_input {
+    max-width: 427px;
+    width: 100%;
+}
+
+.header_images {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.menu_img {
+    display: none;
+}
+
+.input {
+    width: 100%;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 20px;
+    border-radius: 10px;
+    background-color: rgba(47, 43, 67, 0.04);
+    outline: none;
+}
+
+.header_mobile_icons {
+    display: flex;
+    display: none;
+    align-items: center;
+    gap: 15px;
+}
+
+.header_btn {
+    color: #FFF;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 600;
+    position: relative;
+    padding: 16px;
+    background-color: #33836E;
+    border-radius: 10px;
+    padding-left: 54px;
+}
+
+.header_btn::before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    top: 14px;
+    left: 20px;
+    width: 24px;
+    height: 24px;
+    background-image: url(/images/question_icon.svg);
+}
+
+.service_nomber {
+    color: #140A32;
+    font-family: "Open Sans";
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.service_info {
+    color: rgba(47, 43, 67, 0.50);
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.navigation {
+    padding-top: 30px;
+}
+
+.nav_btns {
+    display: flex;
+    gap: 15px;
+}
+
+.nav_btn1 {
+    color: #140A32;
+    font-family: "Open Sans";
+    background-color: transparent;
+    font-size: 16px;
+    font-weight: 400;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 54px;
+    border-radius: 10px;
+    border: 1px solid rgba(47, 43, 67, 0.15);
+    position: relative;
+}
+
+.nav_btn1::before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    top: 8px;
+    left: 20px;
+    width: 24px;
+    height: 24px;
+    background-image: url(/images/phone_icon.svg);
+}
+
+.nav_btn2 {
+    position: relative;
+    background-color: transparent;
+    color: #140A32;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 400;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 54px;
+    border-radius: 10px;
+    border: 1px solid rgba(47, 43, 67, 0.15);
+}
+
+.nav_btn2::before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    top: 8px;
+    left: 20px;
+    width: 24px;
+    height: 24px;
+    background-image: url(/images/telegram_icon.svg);
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.item {
+    color: #140A32;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.navigation_list {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.registration {
+    position: relative;
+    color: #140A32;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 400;
+    background-color: transparent;
+}
+
+.registration::before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    top: -1.5px;
+    left: -22px;
+    width: 24px;
+    height: 24px;
+    background-image: url(/images/user.svg);
+}
+
+
+@media screen and (max-width:1140px) {
+    .service {
+        display: none;
+    }
+}
+
+@media screen and (max-width:1060px) {
+    .navigation_list{
+        display: none;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .header_input {
+        display: none;
+    }
+}
+
+@media screen and (max-width:553px) {
+    .nav_btns{
+        display: none;
+        padding-left: 20px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .menu_img {
+        display: inline-block;
+    }
+
+    .header_btn {
+        display: none;
+    }
+
+    .header_mobile_icons {
+        display: inline-block;
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        max-width: 180px;
+    }
+}
